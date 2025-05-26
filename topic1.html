@@ -1,63 +1,203 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-  <meta charset="UTF-8">
-  <title>IV БӨЛІМ – Мәтіндік құжатпен жұмыс</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>I БӨЛІМ – Мәтіндік құжатпен жұмыс (Топик 1)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+      max-width: 900px;
+      margin-left: auto; margin-right: auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      background-color: #0066cc;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background-color: #3385ff;
+    }
+    h3 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    table th {
+      background-color: #004080;
+      color: white;
+      padding: 14px 12px;
+      font-weight: 600;
+      text-align: left;
+    }
+    table td {
+      padding: 12px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 15px;
+    }
+    table tr:last-child td {
+      border-bottom: none;
+    }
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: vertical;
+      background-color: #fdfdfd;
+    }
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+    }
+    button:hover {
+      background-color: #002e66;
+    }
+    .score-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+    .score-table th, .score-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .score-table th {
+      background-color: #007ACC;
+      color: white;
+    }
+    .score-table td.criteria-name {
+      text-align: left;
+      background-color: #e8f4fd;
+      font-weight: 600;
+    }
+    input[type="radio"] {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>IV БӨЛІМ – Мәтіндік құжатпен жұмыс</h1>
+    <h1>I БӨЛІМ – Мәтіндік құжатпен жұмыс (Топик 1)</h1>
     <nav><a href="topics.html">← Артқа</a></nav>
   </header>
+
   <main>
-    <h3>📋 Аты-жөніңіз:</h3>
-    <form action="https://formsubmit.co/your-email@example.com" method="POST">
-      <input type="hidden" name="_subject" value="Топик 1: Мәтіндік құжатпен жұмыс">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="Аты-жөні" required placeholder="Аты-жөніңіз" style="padding:10px; width:100%; margin-bottom:20px;">
+    <h3>📊 Бағалау критерийлері</h3>
+    <table>
+      <tr><th>Критерий</th><th>Балл</th></tr>
+      <tr><td>Қадамдарды нақты жазу</td><td>2</td></tr>
+      <tr><td>Пайдасын түсіндіру</td><td>2</td></tr>
+      <tr><td>Мысал келтіру</td><td>2</td></tr>
+      <tr><td>Шешімнің маңыздылығы</td><td>2</td></tr>
+      <tr><td>Жауаптың құрылымы</td><td>2</td></tr>
+    </table>
+
+    <form action="https://formsubmit.co/ayazhan.akan04@mail.ru" method="POST">
+      <input type="hidden" name="_subject" value="Жауап: Топик 1 – Мәтіндік құжат" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      
+      <p><strong>Атыңызды жазыңыз:</strong></p>
+      <textarea name="name" rows="1" required></textarea>
 
       <p><strong>1. Word бағдарламасында сабақ жоспарын қалай құрастыруға болады?</strong></p>
-      <textarea name="q1" rows="4" required></textarea>
+      <textarea name="q1" rows="5" required></textarea>
 
       <p><strong>2. Құжатқа кесте қосудың жолын сипатта.</strong></p>
-      <textarea name="q2" rows="4" required></textarea>
+      <textarea name="q2" rows="5" required></textarea>
 
       <p><strong>3. Құжаттағы мәтінді ресми түрде қалай пішімдеуге болады?</strong></p>
-      <textarea name="q3" rows="4" required></textarea>
+      <textarea name="q3" rows="5" required></textarea>
 
-      <p><strong>4. Құжатты PDF форматына қалай түрлендіресің және ол не үшін қажет?</strong></p>
-      <textarea name="q4" rows="4" required></textarea>
+      <p><strong>4. Құжатты PDF форматына қалай түрлендіресің және ол не үшін қажет болуы мүмкін?</strong></p>
+      <textarea name="q4" rows="5" required></textarea>
 
       <p><strong>5. Құжаттағы грамматикалық қатені қалай тексеруге болады?</strong></p>
-      <textarea name="q5" rows="4" required></textarea>
+      <textarea name="q5" rows="5" required></textarea>
 
-      <h3>📝 Өзін-өзі бағалау:</h3>
-      <table>
-        <tr>
-          <th>Критерий</th>
-          <th>Балл (0-2)</th>
-        </tr>
-        <tr>
-          <td>Қадамдарды нақты жазу</td>
-          <td><input type="number" name="К1" min="0" max="2" required></td>
-        </tr>
-        <tr>
-          <td>Пайдасын түсіндіру</td>
-          <td><input type="number" name="К2" min="0" max="2" required></td>
-        </tr>
-        <tr>
-          <td>Мысал келтіру</td>
-          <td><input type="number" name="К3" min="0" max="2" required></td>
-        </tr>
-        <tr>
-          <td>Шешімнің маңыздылығы</td>
-          <td><input type="number" name="К4" min="0" max="2" required></td>
-        </tr>
-        <tr>
-          <td>Жауаптың құрылымы</td>
-          <td><input type="number" name="К5" min="0" max="2" required></td>
-        </tr>
+      <h3>📈 Өзін-өзі бағалау</h3>
+      <table class="score-table" aria-label="Бағалау критерийлері">
+        <thead>
+          <tr>
+            <th>Критерий</th>
+            <th>0 балл</th>
+            <th>1 балл</th>
+            <th>2 балл</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="criteria-name">Қадамдарды нақты жазу</td>
+            <td><input type="radio" name="c1" value="0" required></td>
+            <td><input type="radio" name="c1" value="1"></td>
+            <td><input type="radio" name="c1" value="2"></td>
+          </tr>
+          <tr>
+            <td class="criteria-name">Пайдасын түсіндіру</td>
+            <td><input type="radio" name="c2" value="0" required></td>
+            <td><input type="radio" name="c2" value="1"></td>
+            <td><input type="radio" name="c2" value="2"></td>
+          </tr>
+          <tr>
+            <td class="criteria-name">Мысал келтіру</td>
+            <td><input type="radio" name="c3" value="0" required></td>
+            <td><input type="radio" name="c3" value="1"></td>
+            <td><input type="radio" name="c3" value="2"></td>
+          </tr>
+          <tr>
+            <td class="criteria-name">Шешімнің маңыздылығы</td>
+            <td><input type="radio" name="c4" value="0" required></td>
+            <td><input type="radio" name="c4" value="1"></td>
+            <td><input type="radio" name="c4" value="2"></td>
+          </tr>
+          <tr>
+            <td class="criteria-name">Жауаптың құрылымы</td>
+            <td><input type="radio" name="c5" value="0" required></td>
+            <td><input type="radio" name="c5" value="1"></td>
+            <td><input type="radio" name="c5" value="2"></td>
+          </tr>
+        </tbody>
       </table>
 
       <button type="submit">Жіберу</button>
